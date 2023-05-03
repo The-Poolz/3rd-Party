@@ -9,6 +9,9 @@
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "jest": {
     "transform": {
       "^.+\\.(ts|tsx)$": "ts-jest"
@@ -31,5 +34,5 @@
   "author": "Poolz team",
   "license": "MIT",
   "homepage": "https://github.com/The-Poolz/3rd-Party",
-  "gitHead": "5b0ef49982dcf4d2c6d58a7c9f45dd285f5da47c"
+  "gitHead": "bdf9642f329ec1a38ddfff3ca6c12a0f338b61c9"
 }
