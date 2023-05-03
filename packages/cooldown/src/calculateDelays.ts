@@ -3,7 +3,7 @@ export function calculateDelays(start: number, cliff: number, finish: number) {
    * Validation
    */
   if (!start && !finish) {
-    throw new TypeError("StartTime and FinishTime must have values")
+    throw new TypeError("StartTime or FinishTime must have values")
   }
   if (start && finish && start >= finish) {
     throw new TypeError("FinishTime must be bigger than StartTime")

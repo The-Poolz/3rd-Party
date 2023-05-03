@@ -8,12 +8,12 @@ if (nodeVersion < 16) {
 export default function createConfig(packageJson) {
   const output = {
     exports: "named",
-    name: packageJson.name
-    // sourcemap: true
+    name: packageJson.name,
+    sourcemap: true
   }
 
   const esbuildPlugin = esbuild({
-    // minify: true,
+    minify: true,
     tsconfig: "./tsconfig.json",
     platform: "node",
     treeShaking: true,
