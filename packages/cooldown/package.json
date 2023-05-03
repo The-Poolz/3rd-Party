@@ -1,0 +1,34 @@
+{
+  "name": "@poolzfinance/cooldown",
+  "version": "0.0.1-alpha.0",
+  "description": "",
+  "type": "module",
+  "source": "src/index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "jest": {
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    }
+  },
+  "scripts": {
+    "build:clean": "rm -rf dist",
+    "build:types": "tsc --emitDeclarationOnly",
+    "build:source": "rollup --config rollup.config.js",
+    "build": "pnpm build:clean; pnpm build:types & pnpm build:source",
+    "dev": "rollup --config rollup.config.js --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/The-Poolz/3rd-Party",
+    "directory": "packages/cooldown"
+  },
+  "author": "Poolz team",
+  "license": "UNLICENSED",
+  "homepage": "https://github.com/The-Poolz/3rd-Party"
+}
