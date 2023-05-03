@@ -1,6 +1,6 @@
 {
   "name": "@poolzfinance/cooldown",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "",
   "type": "module",
   "source": "src/index.ts",
