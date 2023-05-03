@@ -2,12 +2,10 @@
   "name": "root",
   "private": false,
   "type": "module",
-  "workspaces": [
-    "packages/*"
-  ],
   "scripts": {
-    "build": "npx lerna run build",
-    "test": "npx lerna run test"
+    "build": "./node_modules/.bin/lerna run build",
+    "test": "./node_modules/.bin/lerna run test",
+    "publish": "./node_modules/.bin/lerna publish --no-private"
   },
   "prettier": {
     "printWidth": 140,
