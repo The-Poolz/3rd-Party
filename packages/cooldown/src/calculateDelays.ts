@@ -3,10 +3,10 @@ export function calculateDelays(start: number, cliff: number, finish: number) {
    * Validation
    */
   if (!start && !finish) {
-    throw new TypeError("StartTime or FinishTime must have values")
+    throw new TypeError("StartDelays or FinishDelays must have values")
   }
   if (start && finish && start >= finish) {
-    throw new TypeError("FinishTime must be bigger than StartTime")
+    throw new TypeError("FinishDelays must be bigger than StartDelays")
   }
 
   let isLinear
