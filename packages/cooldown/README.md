@@ -29,6 +29,12 @@ npm install @poolzfinance/cooldown
 yarn add @poolzfinance/cooldown
 ```
 
+### Pnpm
+
+```bash
+pnpm add @poolzfinance/cooldown
+```
+
 ## Usage
 
 ```typescript
