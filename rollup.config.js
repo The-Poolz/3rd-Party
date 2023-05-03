@@ -8,14 +8,14 @@ if (nodeVersion < 16) {
 export default function createConfig(packageJson) {
   const output = {
     exports: "named",
-    name: packageJson.name,
-    sourcemap: true
+    name: packageJson.name
+    // sourcemap: true
   }
 
   const esbuildPlugin = esbuild({
-    minify: true,
+    // minify: true,
     tsconfig: "./tsconfig.json",
-    platform: "browser",
+    platform: "node",
     treeShaking: true,
     loaders: {
       ".json": "json"
@@ -26,7 +26,7 @@ export default function createConfig(packageJson) {
     {
       input: "./src/index.ts",
       plugins: [esbuildPlugin],
-      output: [{ file: "./dist/index.js", format: "es", ...output }]
+      output: [{ file: "./dist/index.js", format: "cjs", ...output }]
     }
   ]
 }
